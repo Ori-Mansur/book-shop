@@ -1,0 +1,135 @@
+@font-face{
+    font-family: bitter;
+    src: url(../fonts/Bitter-Bold.ttf);
+}
+body{
+    font-family: bitter;
+    background-image: url(../img/787.jpg);
+    background-size: cover;
+
+}
+h1{
+    text-align: center;
+    color: white;
+}
+img{
+    width: 150px;
+    height: 100px;
+}
+td{
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.658);
+    text-align: center;
+    padding: 10px;
+}
+button{
+    font-family: bitter;
+}
+input{
+    border-radius: 2px;
+    font-family: bitter;
+}
+table{
+    max-width: 1000px;
+    border-radius: 10px;
+    opacity:1;
+    padding: 5px;
+    
+}
+.shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.add-new{
+    border: 1px solid blue;
+    padding: 0px 10px;
+    border-radius: 5px;
+    background-color: rgba(240, 248, 255, 0.658);;
+    color: blue;
+    transition: 0.3s;
+}
+.add-new:hover{
+    text-decoration-line: underline;
+    
+}
+.hide{
+    display: none;
+}
+.book-rate{
+    width: 100px;
+    align-self: center;
+}
+.book-details{
+    border: 2px solid black;
+    border-radius: 15px;
+    position: absolute;
+    background-color: beige;
+    width: 300px;
+    height: 300px;
+    display: none;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+}
+.book-details h2{
+    margin: 0px;
+
+}
+.book-details img{
+    width: 100px;
+    height: 100px;
+}
+.book-details button{
+    align-self: flex-end;
+    justify-self: flex-end;
+    position: relative;
+}
+.read{
+    background-color: slateblue;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    height: 25px;
+}
+.update{
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    height: 25px;
+}
+.delete{
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    height: 25px;
+}
+.update-price{
+    border: 2px solid black;
+    align-self: center;
+    justify-self: center;
+    position: fixed;
+    background-color: orange;
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    border-radius: 50px;
+}
+.update-price h3{
+    margin: 0px;
+}
+.new-price{
+    text-align: center;
+}
+.translate{
+    display: inline-block;
+    font-family: bitter,serif;
+    font-size: 1rem;
+    font-weight: bold;
+}

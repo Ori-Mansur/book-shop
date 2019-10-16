@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Book Shop</title>
+</head>
+
+<body onload="init()">
+    <h1 data-trans="title">Book Shop</h1>
+    <div class="shop">
+        <div><span class="add-new" onclick="openAddBook()" data-trans="add">Add New Book</span>
+        <select class="translate add-new" onchange="onSetLang(this.value)">
+            <option value="en">English</option>
+            <option value="he">עברית</option>
+            <option value="es">Spanish</option>
+        </select>
+    </div>
+        <div class="new-book hide">
+            <input type="text" class="book-name" data-trans="add-name" placeholder="Book Name">
+            <input type="text" class="book-price" data-trans="add-price" placeholder="Book Price">
+            <input type="text" class="book-img" placeholder="img/abc.jpg">
+            <button onclick="onReadAndAddNewBook()">Add</button>
+        </div>
+
+
+        <div class="book-details">
+        </div>
+        <div class="update-price hide">
+            <h3 data-trans="update-price">Update Price</h3>
+            <input type="text" class="new-price" data-trans="update-price-inp" placeholder="Enter Price">
+        </div>
+        <table>
+            <tbody>
+                <thead>
+                    <td data-trans="id">Id</td>
+                    <td data-trans="name">Name</td>
+                    <td data-trans="price">Price</td>
+                    <td data-trans="picture">Picture</td>
+                    <td data-trans="actions">Actions</td>
+
+                </thead>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/utils-service.js"></script>
+    <script src="js/translate-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-controler.js"></script>
+
+</body>
+
+</html>
