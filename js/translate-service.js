@@ -18,20 +18,20 @@ var gTrans = {
         'read-btn': 'Read'
     },
     es: {
-        title: 'Book Shop',
-        add: 'Add New Book',
-        'add-name': 'Book Name',
-        'add-price': 'Book Price',
-        'update-price': 'Update Price',
-        'update-price-inp': 'Enter Price',
+        title: 'Librería',
+        add: 'Añadir nuevo libro',
+        'add-name': 'Nombre del libro',
+        'add-price': 'Precio del libro',
+        'update-price': 'Actualizar precio',
+        'update-price-inp': 'Ingrese precio',
         id: 'Id',
-        name: 'Name',
-        price: 'Price',
-        picture: 'Picture',
-        actions: 'Actions',
-        'update-btn': 'Update',
-        'delete-btn': 'Delete',
-        'read-btn': 'Read'
+        name: 'Nombre',
+        price: 'Precio',
+        picture: 'Imagen',
+        actions: 'Comportamiento',
+        'update-btn': 'Actualizar',
+        'delete-btn': 'Eliminar',
+        'read-btn': 'Leer'
     },
     he: {
         title: 'חנות ספרים',

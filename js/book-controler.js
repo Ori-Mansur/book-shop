@@ -96,8 +96,11 @@ function onReadAndAddNewBook() {
 function onSetLang(lang) {
     setLang(lang)
     onDoTrans()
-    getCuntryCurrency(lang)
+    // getCuntryCurrency(lang)
 
+}
+function onSetCurrency(currency) { 
+    getCuntryCurrency(currency)
 }
 
 
@@ -114,20 +117,20 @@ function onDoTrans() {
     })
 }
 
-function getCuntryCurrency(lang){
+function getCuntryCurrency(currency){
     var elPrices = document.querySelectorAll('[data-currency]')
     var books=getBooks()
     books.forEach(function(book,idx){
         var currPrice=book.price
-            if(lang==='en'){
-                var cuntry=lang+'-US'
+            if(currency==='$'){
+                var cuntry='en-US'
                 var coin='USD'
-            }else if(lang==='es'){
-                var cuntry=lang+'-ES'
+            }else if(currency==='€'){
+                var cuntry='es-ES'
                 var coin='EUR'
                 currPrice*=0.8
-            }else if(lang==='he'){
-                var cuntry=lang+'-IL'
+            }else if(currency==='₪'){
+                var cuntry='he-IL'
                 var coin='ILS'
                 currPrice*=3.5
             }
@@ -138,12 +141,12 @@ function getCuntryCurrency(lang){
 
 
 ///not in use bur good///
-function onSetCurrency() {
-    var elPrices = document.querySelectorAll('[data-currency]')
-    elPrices.forEach(function (elPrice) {
-        var strPrice = elPrice.innerText
-        var price = +strPrice.match(/\d/ig, '').join('')
-        var cuntryPrice = getCuntryCurrency(price)
-        elPrice.innerText = cuntryPrice
-    })
-}
+// function onSetCurrency() {
+//     var elPrices = document.querySelectorAll('[data-currency]')
+//     elPrices.forEach(function (elPrice) {
+//         var strPrice = elPrice.innerText
+//         var price = +strPrice.match(/\d/ig, '').join('')
+//         var cuntryPrice = getCuntryCurrency(price)
+//         elPrice.innerText = cuntryPrice
+//     })
+// }

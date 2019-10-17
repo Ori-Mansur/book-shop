@@ -18,6 +18,11 @@
             <option value="he">עברית</option>
             <option value="es">Spanish</option>
         </select>
+        <select class="translate add-new" onchange="onSetCurrency(this.value)">
+            <option value="$">$</option>
+            <option value="₪">₪</option>
+            <option value="€">€</option>
+        </select>
     </div>
         <div class="new-book hide">
             <input type="text" class="book-name" data-trans="add-name" placeholder="Book Name">
